@@ -1,0 +1,16 @@
+{
+ "apps" : [{
+     "name" : "app-name",
+     "script"    : "./www",
+     "instances" : "max",
+     "exec_mode" : "cluster" ,
+     "env_development": {
+           "PORT": 3000,
+           "NODE_ENV": "development"
+     },
+     "env_production": {
+           "PORT": 80,
+           "NODE_ENV": "production"
+     }
+ }]
+}
